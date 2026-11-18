@@ -1,0 +1,14 @@
+name = "claude-email-worker"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+ATOMIC_MAIL_EMAIL = "leonclaude@atomicmail.ai"
+
+# Set these as secrets via wrangler secret put:
+# ANTHROPIC_API_KEY
+# ATOMIC_MAIL_TOKEN
+# ATOMIC_MAIL_ACCOUNT_ID
+# ATOMIC_MAIL_SENT_MAILBOX_ID
+# WEBHOOK_SECRET
+# ALLOWED_SENDERS (comma-separated, e.g. "leonmehmeti34@gmail.com,itsdefnotleon@proton.me")
